@@ -1,0 +1,32 @@
+# Here u can write list of tanks
+# name - have to be unique
+# face - where will they look at the beginning of the game (south north west east)
+# color - (WHITE, RED, GREEN, BlUE, ORANGE, PINK)
+# pos_x, pos_y - position at the beginning of the game (1-10)
+# instruction_name - name of file w instruction for this tank
+
+tanks:
+  - name: Leonardo
+    face: west
+    color: BLUE
+    pos_x: 1
+    pos_y: 1
+    instruction_name: instruction_leonardo
+  - name: Donatello
+    face: north
+    color: PURPLE
+    pos_x: 8
+    pos_y: 2
+    instruction_name: instruction_donatello
+  - name: Raphael
+    face: east
+    color: RED
+    pos_x: 8
+    pos_y: 8
+    instruction_name: instruction_raphael
+  - name: Michelangelo
+    face: south
+    color: ORANGE
+    pos_x: 2
+    pos_y: 8
+    instruction_name: instruction_michelangelo
