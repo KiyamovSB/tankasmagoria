@@ -1,25 +1,25 @@
-# После комментария пишется иснтукция. Каждая команда с новой сторки.
-# Список команд:
-# вперед
-# направо
-# налево
-# стена (используется для условия говорит есть ли здесь стена)
-# стрелять
-# вижу_танк (используется для условия говорит есть ли впереди танк)
-# случайно (случайно направо или налево)
-# "действие" если "условие" иначе "действие"
-стрелять
-стрелять если вижу_танк иначе вперед
-стрелять если вижу_танк иначе вперед
-стрелять если вижу_танк иначе вперед
-стрелять если вижу_танк иначе вперед
-стрелять если вижу_танк иначе вперед
-стрелять если вижу_танк иначе вперед
-налево если стена иначе вперед
-стрелять если вижу_танк иначе вперед
-стрелять если вижу_танк иначе вперед
-стрелять если вижу_танк иначе вперед
-стрелять если вижу_танк иначе вперед
-стрелять если вижу_танк иначе вперед
-стрелять если вижу_танк иначе вперед
-случайно
+# After the comment, the inscription is written. Each command from a new site.
+# List of commands:
+# forward
+# right
+# left
+# is_wall (used for a condition that says whether there is a wall here)
+# shoot
+# is_see_tank (used for the condition that says whether there is a tank ahead)
+# random (randomly right or left)
+# "action" if "condition" else "action"
+shoot
+shoot if is_see_tank else forward
+shoot if is_see_tank else forward
+shoot if is_see_tank else forward
+shoot if is_see_tank else forward
+shoot if is_see_tank else forward
+shoot if is_see_tank else forward
+left if is_wall else forward
+shoot if is_see_tank else forward
+shoot if is_see_tank else forward
+shoot if is_see_tank else forward
+shoot if is_see_tank else forward
+shoot if is_see_tank else forward
+shoot if is_see_tank else forward
+random

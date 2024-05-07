@@ -29,15 +29,15 @@ class Tank:
         with open(instruction_name, 'r',  encoding="utf-8") as file:
             instruction = file.read()
 
-        instruction = instruction.replace("если", "if")
-        instruction = instruction.replace("иначе", "else")
-        instruction = instruction.replace("вижу_танк", "self.is_tank_ahead(field)")
-        instruction = instruction.replace("стрелять", "self.shot(field)")
-        instruction = instruction.replace("стена", "self.is_wall(field)")
-        instruction = instruction.replace("вперед", "self.go_ahead(field)")
-        instruction = instruction.replace("направо", "self.go_right()")
-        instruction = instruction.replace("налево", "self.go_left()")
-        instruction = instruction.replace("случайно", "self.go_random()")
+        instruction = instruction.replace("if", "if")
+        instruction = instruction.replace("else", "else")
+        instruction = instruction.replace("is_see_tank", "self.is_tank_ahead(field)")
+        instruction = instruction.replace("shoot", "self.shot(field)")
+        instruction = instruction.replace("is_wall", "self.is_wall(field)")
+        instruction = instruction.replace("forward", "self.go_ahead(field)")
+        instruction = instruction.replace("right", "self.go_right()")
+        instruction = instruction.replace("left", "self.go_left()")
+        instruction = instruction.replace("random", "self.go_random()")
 
         instructions = [line for line in instruction.split('\n') if '#' not in line]
 
